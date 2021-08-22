@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-promotion-rules",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Return the array data type with the smallest size and closest kind to which array data types can be safely cast.",
   "license": "Apache-2.0",
   "author": {
