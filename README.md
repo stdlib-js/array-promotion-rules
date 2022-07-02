@@ -63,7 +63,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.promotionRules;
+})();
 })();
 </script>
 ```
@@ -129,6 +131,7 @@ var out = promotionRules( 'foo', 'generic' );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var DTYPES;
 var dt1;
@@ -150,6 +153,7 @@ for ( i = 0; i < DTYPES.length; i++ ) {
     }
 }
 
+})();
 })();
 </script>
 </body>
@@ -255,11 +259,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes/tree/umd
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes/tree/umd/tree/umd
 
-[@stdlib/array/safe-casts]: https://github.com/stdlib-js/array-safe-casts/tree/umd
+[@stdlib/array/safe-casts]: https://github.com/stdlib-js/array-safe-casts/tree/umd/tree/umd
 
-[@stdlib/ndarray/promotion-rules]: https://github.com/stdlib-js/ndarray-promotion-rules/tree/umd
+[@stdlib/ndarray/promotion-rules]: https://github.com/stdlib-js/ndarray-promotion-rules/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
