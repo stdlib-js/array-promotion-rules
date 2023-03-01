@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-promotion-rules
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@esm/index.mjs';
+var promotionRules = require( '@stdlib/array-promotion-rules' );
 ```
 
 #### promotionRules( \[dtype1, dtype2] )
@@ -97,14 +113,9 @@ var out = promotionRules( 'foo', 'generic' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@esm/index.mjs';
-import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@esm/index.mjs';
+```javascript
+var dtypes = require( '@stdlib/array-dtypes' );
+var promotionRules = require( '@stdlib/array-promotion-rules' );
 
 var DTYPES;
 var dt1;
@@ -125,10 +136,6 @@ for ( i = 0; i < DTYPES.length; i++ ) {
         console.log( '(%s, %s) => %s', dt1, dt2, dt );
     }
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -151,9 +158,9 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/array/dtypes`][@stdlib/array/dtypes]</span><span class="delimiter">: </span><span class="description">list of array data types.</span>
--   <span class="package-name">[`@stdlib/array/safe-casts`][@stdlib/array/safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of array data types to which a provided array data type can be safely cast.</span>
--   <span class="package-name">[`@stdlib/ndarray/promotion-rules`][@stdlib/ndarray/promotion-rules]</span><span class="delimiter">: </span><span class="description">return the ndarray data type with the smallest size and closest kind to which ndarray data types can be safely cast.</span>
+-   <span class="package-name">[`@stdlib/array-dtypes`][@stdlib/array/dtypes]</span><span class="delimiter">: </span><span class="description">list of array data types.</span>
+-   <span class="package-name">[`@stdlib/array-safe-casts`][@stdlib/array/safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of array data types to which a provided array data type can be safely cast.</span>
+-   <span class="package-name">[`@stdlib/ndarray-promotion-rules`][@stdlib/ndarray/promotion-rules]</span><span class="delimiter">: </span><span class="description">return the ndarray data type with the smallest size and closest kind to which ndarray data types can be safely cast.</span>
 
 </section>
 
@@ -168,7 +175,7 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -230,11 +237,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes/tree/esm
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes
 
-[@stdlib/array/safe-casts]: https://github.com/stdlib-js/array-safe-casts/tree/esm
+[@stdlib/array/safe-casts]: https://github.com/stdlib-js/array-safe-casts
 
-[@stdlib/ndarray/promotion-rules]: https://github.com/stdlib-js/ndarray-promotion-rules/tree/esm
+[@stdlib/ndarray/promotion-rules]: https://github.com/stdlib-js/ndarray-promotion-rules
 
 <!-- </related-links> -->
 
