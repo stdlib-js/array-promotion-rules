@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@esm/index.mjs';
+import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@v0.1.0-esm/index.mjs';
 ```
 
 #### promotionRules( \[dtype1, dtype2] )
@@ -115,7 +115,7 @@ var out = promotionRules( 'foo', 'generic' );
 <script type="module">
 
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@esm/index.mjs';
-import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@esm/index.mjs';
+import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@v0.1.0-esm/index.mjs';
 
 var DTYPES;
 var dt1;
