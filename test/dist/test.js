@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,71 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var dtypes = require( '@stdlib/array-dtypes' );
-var isObject = require( '@stdlib/assert-is-plain-object' );
-var promotionRules = require( './../../dist' );
-
-
-// VARIABLES //
-
-var DTYPES = dtypes();
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof promotionRules, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'if not provided data types, the function returns a table', function test( t ) {
-	var out = promotionRules();
-	t.strictEqual( isObject( out ), true, 'returns an object' );
-	t.strictEqual( out[ 'float32' ][ 'uint32' ], 'float64', 'returns expected value' );
-	t.end();
-});
-
-tape( 'the function returns the array data type with the smallest size and closest "kind" to which array data types can be safely cast', function test( t ) {
-	var table;
-	var dt1;
-	var dt2;
-	var dt;
-	var j;
-	var i;
-
-	table = promotionRules();
-
-	for ( i = 0; i < DTYPES.length; i++ ) {
-		dt1 = DTYPES[ i ];
-		for ( j = 0; j < DTYPES.length; j++ ) {
-			dt2 = DTYPES[ j ];
-			dt = promotionRules( dt1, dt2 );
-			t.strictEqual( dt, table[ dt1 ][ dt2 ], 'returns expected value when provided ('+dt1+','+dt2+')' );
-		}
-	}
-	t.end();
-});
-
-tape( 'if provided an unrecognized or unsupported data type, the function returns `null`', function test( t ) {
-	var values;
-	var i;
-	var j;
-
-	values = [
-		'beep',
-		'boop',
-		'foo',
-		'bar',
-		true,
-		false
-	];
-	for ( i = 0; i < values.length; i++ ) {
-		t.strictEqual( promotionRules( values[ i ], 'generic' ), null, 'returns expected value when provided '+values[ i ] );
-		t.strictEqual( promotionRules( 'generic', values[ i ] ), null, 'returns expected value when provided '+values[ i ] );
-
-		j = (i+1) % values.length;
-		t.strictEqual( promotionRules( values[ i ], values[ j ] ), null, 'returns expected value when provided ('+values[ i ]+','+values[ j ]+')' );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
