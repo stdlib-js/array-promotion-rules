@@ -251,9 +251,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-promotion-rules/main/LICENSE
 
-<!-- <related-links> -->
-
 [@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes
+
+<!-- <related-links> -->
 
 [@stdlib/array/safe-casts]: https://github.com/stdlib-js/array-safe-casts
 
