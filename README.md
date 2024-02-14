@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-promotion-rules/tags). For example,
+
+```javascript
 import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@v0.2.0-deno/mod.js';
 ```
 
@@ -110,7 +115,7 @@ var out = promotionRules( 'foo', 'generic' );
 
 ```javascript
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@deno/mod.js';
-import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@v0.2.0-deno/mod.js';
+import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@deno/mod.js';
 
 var DTYPES;
 var dt1;
