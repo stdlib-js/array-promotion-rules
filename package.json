@@ -43,9 +43,12 @@
     "@stdlib/utils-keys": "^0.2.2"
   },
   "devDependencies": {
+    "@stdlib/array-cartesian-product": "^0.2.2",
     "@stdlib/array-dtypes": "^0.3.0",
     "@stdlib/assert-is-plain-object": "^0.2.2",
     "@stdlib/assert-is-string": "^0.2.2",
+    "@stdlib/console-log-each-map": "github:stdlib-js/console-log-each-map#main",
+    "@stdlib/utils-unzip": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
