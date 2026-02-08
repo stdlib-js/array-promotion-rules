@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-promotion-rules/tags). For example,
+
+```javascript
 import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@v0.3.1-deno/mod.js';
 ```
 
@@ -113,7 +118,7 @@ import cartesianProduct from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-cartes
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@deno/mod.js';
 import unzip from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-unzip@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@v0.3.1-deno/mod.js';
+import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@deno/mod.js';
 
 // Get the list of supported array data types:
 var dt = dtypes();
