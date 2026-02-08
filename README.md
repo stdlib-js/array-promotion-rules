@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@deno/mod.js';
+import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@v0.3.1-deno/mod.js';
 ```
 
 #### promotionRules( \[dtype1, dtype2] )
@@ -113,7 +113,7 @@ import cartesianProduct from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-cartes
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@deno/mod.js';
 import unzip from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-unzip@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@deno/mod.js';
+import promotionRules from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-promotion-rules@v0.3.1-deno/mod.js';
 
 // Get the list of supported array data types:
 var dt = dtypes();
