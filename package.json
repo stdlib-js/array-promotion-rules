@@ -43,16 +43,16 @@
     "@stdlib/utils-keys": "^0.2.3"
   },
   "devDependencies": {
-    "@stdlib/array-cartesian-product": "^0.2.2",
-    "@stdlib/array-dtypes": "^0.4.0",
+    "@stdlib/array-cartesian-product": "^0.2.3",
+    "@stdlib/array-dtypes": "^0.4.1",
     "@stdlib/assert-is-plain-object": "^0.2.3",
     "@stdlib/assert-is-string": "^0.2.3",
-    "@stdlib/console-log-each-map": "^0.1.0",
+    "@stdlib/console-log-each-map": "^0.1.1",
     "@stdlib/utils-unzip": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.2"
+    "@stdlib/bench-harness": "^0.2.3"
   },
   "engines": {
     "node": ">=0.10.0",
