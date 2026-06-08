@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-07)
+## Unreleased (2026-06-08)
+
+<section class="features">
+
+### Features
+
+-   [`52599f6`](https://github.com/stdlib-js/stdlib/commit/52599f691c05f744f17c423e5ccb890a8c2a5cea) - add float16 dtype support in `array/promotion-rules` [(#12707)](https://github.com/stdlib-js/stdlib/pull/12707)
+
+</section>
+
+<!-- /.features -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`52599f6`](https://github.com/stdlib-js/stdlib/commit/52599f691c05f744f17c423e5ccb890a8c2a5cea) - **feat:** add float16 dtype support in `array/promotion-rules` [(#12707)](https://github.com/stdlib-js/stdlib/pull/12707) _(by Gururaj Gurram)_
 -   [`81e87d4`](https://github.com/stdlib-js/stdlib/commit/81e87d4457c65ba7481c7ab3701d2ee97d50c052) - **bench:** refactor to use string interpolation in `array` [(#11413)](https://github.com/stdlib-js/stdlib/pull/11413) _(by Karan Anand)_
 
 </details>
@@ -24,8 +35,9 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Gururaj Gurram
 -   Karan Anand
 
 </section>
